@@ -29,9 +29,9 @@ const textDisplay: Variants = {
 export default function Header() {
     return (
         <header className="w-full shadow-sm">
-            <nav className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+            <nav className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto md:max-w-none md:w-full md:mx-0">
                 {/* Navigation gauche */}
-                <ul className="flex flex-col gap-6 pb-4 text-[0.75rem]">
+                <ul className="flex flex-col gap-6 pb-4 text-[0.75rem] md:text-[1rem] md:flex-row md:justify-evenly md:w-full">
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
                             href="#about"
@@ -170,7 +170,7 @@ export default function Header() {
                     </a>
                 </div>
 
-                <ul className="flex flex-col gap-6 pb-4 text-[0.75rem] text-right">
+                <ul className="flex flex-col gap-6 pb-4 text-[0.75rem] text-right md:text-[1rem] md:flex-row md:justify-evenly md:w-full md:text-left">
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
                             href="#skills"
@@ -179,55 +179,55 @@ export default function Header() {
                             whileHover="visible"
                             whileTap="visible"
                         >
-                            <span className="hover:opacity-0 active:opacity-0 absolute right-0 z-10">
+                            <span className="hover:opacity-0 active:opacity-0 absolute right-0 z-10 md:left-0">
                                 Compétences
                             </span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={0}
-                                className="absolute right-0"
+                                className="absolute right-0  md:left-0"
                             >
                                 C%l
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={1}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 ComHb
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={2}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 CompéPx
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={3}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Compétew*
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={4}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Compétencp$
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={5}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 CompétenceL
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={6}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Compétences
                             </motion.span>
@@ -241,55 +241,55 @@ export default function Header() {
                             whileHover="visible"
                             whileTap="visible"
                         >
-                            <span className="hover:opacity-0 active:opacity-0 absolute right-0 z-10">
+                            <span className="hover:opacity-0 active:opacity-0 absolute right-0 z-10 md:left-0">
                                 Contact
                             </span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={0}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Cb
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={1}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 CoW
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={2}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Con$
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={3}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Cont!
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={4}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Contam
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={5}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Contac%
                             </motion.span>
                             <motion.span
                                 variants={textDisplay}
                                 custom={6}
-                                className="absolute right-0"
+                                className="absolute right-0 md:left-0"
                             >
                                 Contact
                             </motion.span>

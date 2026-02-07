@@ -26,14 +26,14 @@ function ScrollImageGrow() {
     return (
         <motion.div
             ref={imageContainer}
-            className="h-[300vh] relative"
+            className="h-[300vh] relative md:mt-36"
             style={{ backgroundColor }}
         >
             <div className="sticky top-50 pointer-events-none">
                 <div className="w-full absolute top-0 flex flex-col justify-center items-center overflow-x-clip">
                     <motion.div
                         style={{ scale, opacity }}
-                        className="w-[30vw] h-[30vh] relative flex items-center"
+                        className="w-[30vw] h-[30vh] relative flex items-center justify-center"
                     >
                         <img
                             src="/marathon.png"
@@ -42,7 +42,7 @@ function ScrollImageGrow() {
                         />
                     </motion.div>
                     <motion.p
-                        className="mt-4 text-[0.75rem]! text-center"
+                        className="mt-4 text-[0.75rem]! text-center md:mt-36"
                         style={{ opacity: opacityText }}
                     >
                         (C'est moi tout fier d'avoir fini un marathon !)
@@ -80,7 +80,7 @@ function ScrollEmojiGrow() {
                 <div className="w-full absolute top-0 flex flex-col justify-center items-center overflow-x-clip">
                     <motion.div
                         style={{ scale, opacity, rotate }}
-                        className="w-[30vw] h-[30vh] relative flex items-center"
+                        className="w-[30vw] h-[30vh] relative flex items-center justify-center"
                     >
                         <img src="/icons/clin-doeil-icon.png" />
                     </motion.div>
@@ -124,20 +124,24 @@ export default function Home() {
     return (
         <>
             <section id="about" className="mx-4">
-                <Image
-                    src="/portrait.jpg"
-                    alt="Portrait de Paul Gobbé"
-                    width={200}
-                    height={200}
-                    className="hidden"
-                />
-                <h1 className="text-[3rem] lg:text-[3.75rem] text-center">
-                    Paul Gobbé
-                </h1>
-                <hr className="bg-red-primary border-red-primary h-1 my-4" />
-                <h2 className="text-[1rem]! font-(family-name:--font-montserrat)! text-center">
-                    Développeur Full-Stack Junior
-                </h2>
+                <div className="md:mx-auto md:max-w-4xl md:flex md:justify-around md:mt-8">
+                    <Image
+                        src="/portrait.png"
+                        alt="Portrait de Paul Gobbé"
+                        width={200}
+                        height={200}
+                        className="hidden md:block md:border md:rounded-full"
+                    />
+                    <div className="md:flex md:flex-col md:justify-around">
+                        <h1 className="text-[3rem] md:text-[3.75rem] text-center">
+                            Paul Gobbé
+                        </h1>
+                        <hr className="bg-red-primary border-red-primary h-1 my-4 md:my-0" />
+                        <h2 className="text-[1rem]! font-(family-name:--font-montserrat)! text-center">
+                            Développeur Full-Stack Junior
+                        </h2>
+                    </div>
+                </div>
                 <div className="flex justify-center my-8 mx-6">
                     <strong className="text-[1.5rem] font-(family-name:--font-kanit)! font-medium text-center">
                         Je me donne toujours à{" "}
@@ -151,7 +155,7 @@ export default function Home() {
                         sur les projets
                     </strong>
                 </div>
-                <p>
+                <p className="md:text-center">
                     J’aime passer mes dimanches matins à courir, mes weekends à
                     regarder la F1, et la semaine à coder et chercher des expos
                     à visiter !
@@ -220,7 +224,7 @@ export default function Home() {
             </section>
             <section id="skills" className="mt-8">
                 <h2 className="text-center">
-                    <span className="relative" ref={skillsRef}>
+                    <span className="relative p-3" ref={skillsRef}>
                         Mes compétences{" "}
                         <CircleWrapper
                             elemWidth={skillsBounds.width}
