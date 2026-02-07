@@ -95,10 +95,12 @@ export default function Home() {
     const percentRef = useRef<HTMLSpanElement>(null);
     const skillsRef = useRef<HTMLSpanElement>(null);
     const contactRef = useRef<HTMLSpanElement>(null);
+    const mailRef = useRef<HTMLSpanElement>(null);
 
     const [percentBounds, setPercentBounds] = useState({ width: 0, height: 0 });
     const [skillsBounds, setSkillsBounds] = useState({ width: 0, height: 0 });
     const [contactBounds, setContactBounds] = useState({ width: 0, height: 0 });
+    const [mailBounds, setMailBounds] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
         if (percentRef.current) {
@@ -112,6 +114,10 @@ export default function Home() {
         if (contactRef.current) {
             const rect = contactRef.current.getBoundingClientRect();
             setContactBounds({ width: rect.width, height: rect.height });
+        }
+        if (mailRef.current) {
+            const rect = mailRef.current.getBoundingClientRect();
+            setMailBounds({ width: rect.width, height: rect.height });
         }
     }, []);
 
@@ -386,8 +392,14 @@ export default function Home() {
                     ?
                 </h2>
                 <p className="mt-8">Voici mon mail</p>
-                <a href="mailto:pgobbe.pro@gmail.com" className="block mt-4">
-                    pgobbe.pro@gmail.com
+                <a href="mailto:pgobbe.pro@gmail.com" className="block mt-8">
+                    <span className="relative p-3" ref={mailRef}>
+                        pgobbe.pro@gmail.com
+                        <CircleWrapper
+                            elemWidth={mailBounds.width}
+                            elemHeight={mailBounds.height}
+                        />
+                    </span>
                 </a>
                 <a
                     href="#"
