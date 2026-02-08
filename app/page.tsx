@@ -167,37 +167,39 @@ export default function Home() {
                 className="bg-red-primary text-background pt-20 overflow-x-hidden"
             >
                 <h2 className="text-center">Mes (supers) projets</h2>
-                <div className="cards-container mt-8 flex flex-col gap-4 items-center">
-                    <Card
-                        imageSrc="/projets/free-message.png"
-                        name="Free Message"
-                        description="Un faux réseau social pour poster des messages avec médias ou non. Swipe comme Tinder pour les interactions sur les messages. Gestion de base de données avec PHP et MySQL."
-                        projectLink="http://178.62.53.66:8080/"
-                    ></Card>
-                    <Card
-                        imageSrc="/projets/clash-of-clans-data.png"
-                        name="Clash of clans Data"
-                        description="Site NextJS affichant des données extraites de l'API Clash of Clans. Recherche de joueurs, clans, et affichage de statistiques détaillées."
-                        projectLink="https://clash-of-clan-data.vercel.app/"
-                    ></Card>
-                    <Card
-                        imageSrc="/projets/sae303.png"
-                        name="Inserm - Dépistage de l'autisme"
-                        description="Application Web utilisant ChartJS pour exploiter les données d'une expérience d'un laboratoire de recherche à partir d'un fichier Excel."
-                        projectLink="https://sae-303-tawny.vercel.app/index.html"
-                    ></Card>
-                    <Card
-                        imageSrc="/projets/ancien-portfolio.png"
-                        name="Ancien Portfolio"
-                        description="Mon ancien site portfolio, présentant mes projets et compétences. Réalisé avec NextJS et TailwindCSS."
-                        projectLink="https://portfolio-paulgobbe.vercel.app/"
-                    ></Card>
-                    <Card
-                        imageSrc="/projets/cbd-shop.png"
-                        name="CBD Shop"
-                        description="Une maquette de site e-commerce pour des produits à base de CBD. Réalisée avec Figma et respectant un wireframe donné."
-                        projectLink="https://www.figma.com/design/uksPxDPE0omAzozREPoTD1/CBD-shop?node-id=0-1&t=3N8cfr41T3fmWvHk-1"
-                    ></Card>
+                <div className="flex justify-center">
+                    <div className="cards-container mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+                        <Card
+                            imageSrc="/projets/free-message.png"
+                            name="Free Message"
+                            description="Un faux réseau social pour poster des messages avec médias ou non. Swipe comme Tinder pour les interactions sur les messages. Gestion de base de données avec PHP et MySQL."
+                            projectLink="http://178.62.53.66:8080/"
+                        ></Card>
+                        <Card
+                            imageSrc="/projets/clash-of-clans-data.png"
+                            name="Clash of clans Data"
+                            description="Site NextJS affichant des données extraites de l'API Clash of Clans. Recherche de joueurs, clans, et affichage de statistiques détaillées."
+                            projectLink="https://clash-of-clan-data.vercel.app/"
+                        ></Card>
+                        <Card
+                            imageSrc="/projets/sae303.png"
+                            name="Inserm - Dépistage de l'autisme"
+                            description="Application Web utilisant ChartJS pour exploiter les données d'une expérience d'un laboratoire de recherche à partir d'un fichier Excel."
+                            projectLink="https://sae-303-tawny.vercel.app/index.html"
+                        ></Card>
+                        <Card
+                            imageSrc="/projets/ancien-portfolio.png"
+                            name="Ancien Portfolio"
+                            description="Mon ancien site portfolio, présentant mes projets et compétences. Réalisé avec NextJS et TailwindCSS."
+                            projectLink="https://portfolio-paulgobbe.vercel.app/"
+                        ></Card>
+                        <Card
+                            imageSrc="/projets/cbd-shop.png"
+                            name="CBD Shop"
+                            description="Une maquette de site e-commerce pour des produits à base de CBD. Réalisée avec Figma et respectant un wireframe donné."
+                            projectLink="https://www.figma.com/design/uksPxDPE0omAzozREPoTD1/CBD-shop?node-id=0-1&t=3N8cfr41T3fmWvHk-1"
+                        ></Card>
+                    </div>
                 </div>
                 <hr className="mt-4 bg-background h-1" />
                 <div className="overflow-hidden mt-4 pb-4">
@@ -407,7 +409,7 @@ export default function Home() {
                 </a>
                 <a
                     href="#"
-                    className="block text-red-primary border-red-primary border-2 rounded-full max-w-48 mx-auto mt-8"
+                    className="block text-red-primary text-[0.75rem]! border-red-primary border-2 rounded-full max-w-36 mx-auto mt-16 active:bg-red-primary active:text-background transition duration-300 hover:bg-red-primary hover:text-background"
                 >
                     Revenir au début
                 </a>

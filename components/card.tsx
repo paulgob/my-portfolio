@@ -34,7 +34,7 @@ export default function Card({
             whileInView="onscreen"
             viewport={{ amount: 0.1, once: true }}
             variants={cardVariants}
-            className="card bg-foreground w-75"
+            className="card bg-foreground w-75 transition-transform duration-300 ease-out hover:scale-110 active:scale-110"
         >
             <a href={projectLink} target="_blank">
                 <Image
@@ -44,9 +44,13 @@ export default function Card({
                     height={200}
                 />
                 <div className="flex justify-between p-2 items-center">
-                    <h3>{name}</h3>
-                    <p className="hidden">{description}</p>
-                    <span className="border-2 border-red-primary rounded-full w-12 max-h-6 overflow-hidden">
+                    <div>
+                        <h3>{name}</h3>
+                        <p className="hidden text-[0.75rem]! text-justify md:block">
+                            {description}
+                        </p>
+                    </div>
+                    <span className="border-2 border-red-primary rounded-full w-12 min-w-12 max-h-6 overflow-hidden ml-4">
                         <Image
                             src="/eye-icon.svg"
                             alt="Voir plus"
