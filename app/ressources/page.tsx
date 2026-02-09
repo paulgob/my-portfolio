@@ -217,6 +217,42 @@ export default function Page() {
                         Icons8
                     </a>
                 </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://icons8.com/icon/UhXcV-ggoL4I/cowboy-hat"
+                    >
+                        chapeau de cowboy
+                    </a>{" "}
+                    icône par{" "}
+                    <a target="_blank" href="https://icons8.com">
+                        Icons8
+                    </a>
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://icons8.com/icon/mo0QZAFTfTlF/quick-mode-on"
+                    >
+                        Quick Mode On
+                    </a>{" "}
+                    icône par{" "}
+                    <a target="_blank" href="https://icons8.com">
+                        Icons8
+                    </a>
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://icons8.com/icon/17763/metal-music"
+                    >
+                        Métal
+                    </a>{" "}
+                    icône par{" "}
+                    <a target="_blank" href="https://icons8.com">
+                        Icons8
+                    </a>
+                </li>
             </ul>
         </div>
     );

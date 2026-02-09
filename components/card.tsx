@@ -34,9 +34,9 @@ export default function Card({
             whileInView="onscreen"
             viewport={{ amount: 0.1, once: true }}
             variants={cardVariants}
-            className="card bg-foreground w-75 transition-transform duration-300 ease-out hover:scale-110 active:scale-110"
+            className="card bg-foreground w-75 shadow-black shadow-lg transition-transform duration-300 ease-out hover:scale-110 active:scale-110"
         >
-            <a href={projectLink} target="_blank">
+            <a href={projectLink} target="_blank" className="relative">
                 <Image
                     src={imageSrc}
                     alt={`Image du projet ${name}`}

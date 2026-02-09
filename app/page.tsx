@@ -5,6 +5,7 @@ import Card from "../components/card";
 import { CircleWrapper, Underline } from "../components/draw-animation";
 import { useRef, useEffect, useState } from "react";
 import { motion, useTransform, useScroll } from "motion/react";
+import CustomCursor from "@/components/customCursor";
 
 // Make the image grow and fill the viewport when the user scroll
 function ScrollImageGrow() {
@@ -155,11 +156,14 @@ export default function Home() {
                         sur les projets
                     </strong>
                 </div>
+
                 <p className="md:text-center">
                     J’aime passer mes dimanches matins à courir, mes weekends à
                     regarder la F1, et la semaine à coder et chercher des expos
                     à visiter !
                 </p>
+
+                <CustomCursor />
             </section>
             <ScrollImageGrow />
             <section
@@ -234,141 +238,149 @@ export default function Home() {
                         />
                     </span>
                 </h2>
-                <h3 className="mt-8 mx-4">Frontend technologies</h3>
-                <ul className="mt-4 flex flex-col mx-4">
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/html.png"
-                            alt="HTML icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        HTML
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/css.png"
-                            alt="CSS icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        CSS
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/js.png"
-                            alt="JavaScript icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        JavaScript
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/nextjs.png"
-                            alt="NextJS icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        NextJS
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/tailwind.png"
-                            alt="TailwindCSS icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        TailwindCSS
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/bootstrap.png"
-                            alt="Bootstrap icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Bootstrap
-                    </li>
-                </ul>
-                <h3 className="mt-8 mx-4">Backend technologies</h3>
-                <ul className="mt-4 flex flex-col mx-4">
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/php.png"
-                            alt="PHP icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        PHP
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/twig.png"
-                            alt="TWIG icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        TWIG
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/mysql.png"
-                            alt="MySQL icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        MySQL
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/docker.png"
-                            alt="Docker icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Docker
-                    </li>
-                </ul>
-                <h3 className="mt-8 mx-4">Autres</h3>
-                <ul className="mt-4 flex flex-col mx-4">
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/git.png"
-                            alt="Git icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Git
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/linux.png"
-                            alt="Linux icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Linux
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/figma.png"
-                            alt="Figma icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Figma
-                    </li>
-                    <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
-                        <Image
-                            src="/icons/illustrator.png"
-                            alt="Illustrator icon"
-                            width={24}
-                            height={24}
-                        />{" "}
-                        Illustrator
-                    </li>
-                </ul>
+                <div className="skills-container md:flex md:justify-evenly">
+                    <div className="md:w-full">
+                        <h3 className="mt-8 mx-4">Frontend technologies</h3>
+                        <ul className="mt-4 flex flex-col mx-4">
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/html.png"
+                                    alt="HTML icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                HTML
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/css.png"
+                                    alt="CSS icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                CSS
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/js.png"
+                                    alt="JavaScript icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                JavaScript
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/nextjs.png"
+                                    alt="NextJS icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                NextJS
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/tailwind.png"
+                                    alt="TailwindCSS icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                TailwindCSS
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/bootstrap.png"
+                                    alt="Bootstrap icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Bootstrap
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="md:w-full">
+                        <h3 className="mt-8 mx-4">Backend technologies</h3>
+                        <ul className="mt-4 flex flex-col mx-4">
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/php.png"
+                                    alt="PHP icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                PHP
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/twig.png"
+                                    alt="TWIG icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                TWIG
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/mysql.png"
+                                    alt="MySQL icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                MySQL
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/docker.png"
+                                    alt="Docker icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Docker
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="md:w-full">
+                        <h3 className="mt-8 mx-4">Autres</h3>
+                        <ul className="mt-4 flex flex-col mx-4">
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/git.png"
+                                    alt="Git icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Git
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/linux.png"
+                                    alt="Linux icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Linux
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/figma.png"
+                                    alt="Figma icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Figma
+                            </li>
+                            <li className="flex gap-4 shadow-lg p-4 border-2 border-red-primary rounded-lg mb-2">
+                                <Image
+                                    src="/icons/illustrator.png"
+                                    alt="Illustrator icon"
+                                    width={24}
+                                    height={24}
+                                />{" "}
+                                Illustrator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <p className="mt-8 flex justify-center">
                     Et je compte ajouter des cordes à mon arc{" "}
                 </p>
@@ -384,7 +396,7 @@ export default function Home() {
             </section>
             <section
                 id="contact"
-                className="bg-foreground text-background text-center"
+                className="bg-foreground text-background text-center h-[50vh]"
             >
                 <h2 className="pt-4">
                     Envie de me{" "}
