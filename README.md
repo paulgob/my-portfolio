@@ -7,7 +7,7 @@ I had fun challenging myself by using NextJS (https://nextjs.org/docs/pages/gett
 
 ### What I did ###
 
-In my portfolio there are There are several animations.
+In my portfolio there are several animations.
 
 For example I did : 
 - An image that follow the users mouse
