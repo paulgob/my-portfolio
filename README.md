@@ -1,7 +1,9 @@
 ## Welcome to my Portfolio ##
 
 I'm a junior full-stack developper and I decided to create a portfolio ! 
+
 I had fun challenging myself by using NextJS (https://nextjs.org/docs/pages/getting-started/installation) and Framer Motion (https://motion.dev/)
+
 Check my portfolio here : https://www.paulgobbe.fr/
 
 ---
