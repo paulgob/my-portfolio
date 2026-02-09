@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     title: "Paul Gobbé - Développeur Full-Stack Junior",
     description:
         "Portfolio de Paul Gobbé, développeur full-stack junior passionné à l'idée de relever de nouveaux défis. Découvrez mes projets, compétences et contactez-moi pour collaborer !",
+    icons: {
+        icon: "/LogoRed.png",
+    },
 };
 
 export default function RootLayout({
