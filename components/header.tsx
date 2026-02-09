@@ -34,7 +34,7 @@ export default function Header() {
                 <ul className="flex flex-col gap-6 pb-4 text-[0.75rem] md:text-[1rem] md:flex-row md:justify-evenly md:w-full">
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
-                            href="#about"
+                            href="/#about"
                             className="relative text-nowrap"
                             initial="hidden"
                             whileHover="visible"
@@ -96,7 +96,7 @@ export default function Header() {
                     </li>
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
-                            href="#projects"
+                            href="/#projects"
                             className="relative text-nowrap"
                             initial="hidden"
                             whileHover="visible"
@@ -173,7 +173,7 @@ export default function Header() {
                 <ul className="flex flex-col gap-6 pb-4 text-[0.75rem] text-right md:text-[1rem] md:flex-row md:justify-evenly md:w-full md:text-left">
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
-                            href="#skills"
+                            href="/#skills"
                             className="relative text-nowrap"
                             initial="hidden"
                             whileHover="visible"
@@ -235,7 +235,7 @@ export default function Header() {
                     </li>
                     <li className="cursor-pointer text-red-primary">
                         <motion.a
-                            href="#contact"
+                            href="/#contact"
                             className="relative text-nowrap"
                             initial="hidden"
                             whileHover="visible"
