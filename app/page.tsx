@@ -212,7 +212,7 @@ export default function Home() {
                         initial={{ x: "-50%" }}
                         animate={{ x: "0%" }}
                         transition={{
-                            duration: 20,
+                            duration: 26,
                             repeat: Infinity,
                             ease: "linear",
                         }}
