@@ -172,7 +172,7 @@ export default function Home() {
             >
                 <h2 className="text-center">Mes (supers) projets</h2>
                 <div className="flex justify-center">
-                    <div className="cards-container mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+                    <div className="cards-container my-16 flex flex-col gap-8 md:flex-row">
                         <Card
                             imageSrc="/projets/free-message.png"
                             name="Free Message"

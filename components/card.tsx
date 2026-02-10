@@ -34,9 +34,9 @@ export default function Card({
             whileInView="onscreen"
             viewport={{ amount: 0.1, once: true }}
             variants={cardVariants}
-            className="card bg-foreground w-75 shadow-black shadow-lg transition-transform duration-300 ease-out hover:scale-110 active:scale-110"
+            className="group card bg-foreground w-75 shadow-black shadow-lg transition-transform duration-300 ease-out hover:scale-110 active:scale-110 overflow-hidden relative"
         >
-            <a href={projectLink} target="_blank" className="relative">
+            <a href={projectLink} target="_blank" className="block">
                 <Image
                     src={imageSrc}
                     alt={`Image du projet ${name}`}
@@ -60,6 +60,13 @@ export default function Card({
                         />
                     </span>
                 </div>
+                {/* To fill when hover */}
+                <Image
+                    src={imageSrc}
+                    alt={`Image du projet ${name}`}
+                    fill
+                    className="object-cover absolute inset-0 z-10 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                />
             </a>
         </motion.div>
     );
